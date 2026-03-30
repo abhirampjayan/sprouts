@@ -1,11 +1,12 @@
+import UISafeAreaView from "@/components/common/UISafeAreaView";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const Home = () => {
   return (
-    <View>
+    <UISafeAreaView>
       <Text>Home</Text>
-    </View>
+    </UISafeAreaView>
   );
 };
 
