@@ -3,13 +3,6 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 interface ListHeadingProps {
   title: string;
-}
-const ListHeading = ({ title }: ListHeadingProps) => {
-  return (
-    <View className="list-head">
-      <Text className="list-title">{title}</Text>
-interface ListHeadingProps {
-  title: string;
   onViewAllPress?: () => void;
   viewAllLabel?: string;
 }
@@ -30,12 +23,7 @@ const ListHeading = ({
         >
           <Text className="list-action-text">{viewAllLabel}</Text>
         </TouchableOpacity>
-      ) : (
-        <Text className="list-action-text">{viewAllLabel}</Text>
-      )}
-    </View>
-  );
-};
+      ) : null}
     </View>
   );
 };
